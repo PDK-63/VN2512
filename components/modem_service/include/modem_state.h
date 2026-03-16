@@ -1,0 +1,12 @@
+#pragma once
+
+typedef enum {
+    MODEM_STATE_OFF = 0,
+    MODEM_STATE_INIT,
+    MODEM_STATE_SYNC,
+    MODEM_STATE_DATA,
+    MODEM_STATE_WAIT_IP,
+    MODEM_STATE_RUNNING,
+    MODEM_STATE_RECOVERING,
+    MODEM_STATE_FAULT
+} modem_state_t;

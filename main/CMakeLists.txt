@@ -1,7 +1,3 @@
-idf_component_register(SRCS "TCA9555PWR.c" "TM1638.c" "ntc_driver.c" "main.c"
-                    INCLUDE_DIRS ".")
-
-# set(COMPONENT_SRCDIRS ".")
-# set(COMPONENT_ADD_INCLUDEDIRS ".")
-
-# register_component() 
+idf_component_register(SRCS "main.c" "TM1638.c" "TCA9555PWR.c"
+                    INCLUDE_DIRS "."
+                    REQUIRES NTC TCA EC800M mqtt_service modem_service app_logic bsp_board)
